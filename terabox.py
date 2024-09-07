@@ -57,7 +57,7 @@ async def start_command(client, message):
     developer_button = InlineKeyboardButton("ᴅᴇᴠᴇʟᴏᴘᴇʀ ⚡️", url="https://t.me/MrSagar0")
     reply_markup = InlineKeyboardMarkup([[join_button, developer_button]])
     photo_file_id = "https://envs.sh/bCt.jpg"
-    if os.path.exists(video_file_id):
+    if os.path.exists(photo_file_id):
         await client.send_photo(
             chat_id=message.chat.id,
             photo=photo_file_id,
